@@ -27,7 +27,8 @@ def self.drop_table()
 end
 
 def save()
-  
+  sql = <<-SQL
+    INSERT INTO s
 end
 
 end
