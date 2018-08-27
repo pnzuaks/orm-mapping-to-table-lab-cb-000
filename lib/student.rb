@@ -16,7 +16,7 @@ def self.create_table()
       grade TEXT
     )
       SQL
-    DB[:]
+    DB[:conn].execute(sql)
 end
 
 end
