@@ -9,7 +9,8 @@ def initialize(name, grade, id=nil)
 end
 
 def self.create_table()
-  
+  sql = <<-SQL
+    
 end
 
 end
