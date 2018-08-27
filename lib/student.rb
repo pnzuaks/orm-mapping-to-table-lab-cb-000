@@ -25,7 +25,7 @@ def self.drop_table()
       id INTEGER PRIMARY KEY,
       name TEXT,
       grade TEXT
-    )
+    );
       SQL
     DB[:conn].execute(sql)
 end
