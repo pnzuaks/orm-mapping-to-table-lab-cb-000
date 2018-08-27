@@ -20,9 +20,9 @@ def self.create_table()
 end
 
 def self.drop_table()
-  sql1 = <<-SQL
-    DROP TABLE IF EXISTS students 
+  sql = <<-SQL
+    DROP TABLE IF EXISTS students
       SQL
-    DB[:conn].execute(sql1)
+    DB[:conn].execute(sql)
 end
 end
