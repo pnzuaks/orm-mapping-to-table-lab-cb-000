@@ -20,13 +20,13 @@ def self.create_table()
 end
 
 def self.drop_table()
-  sql = <<-SQL
+  sql1 = <<-SQL
     DROP TABLE IF EXISTS students (
       id INTEGER PRIMARY KEY,
       name TEXT,
       grade TEXT
-    );
+    )
       SQL
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql1)
 end
 end
