@@ -21,11 +21,7 @@ end
 
 def self.drop_table()
   sql1 = <<-SQL
-    DROP TABLE IF EXISTS students (
-      id INTEGER PRIMARY KEY,
-      name TEXT,
-      grade TEXT
-    )
+    DROP TABLE IF EXISTS students 
       SQL
     DB[:conn].execute(sql1)
 end
