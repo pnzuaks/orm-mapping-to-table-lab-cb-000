@@ -8,6 +8,8 @@ def initialize(name, grade, id=nil)
   @grade = grade
 end
 
-def self.
+def self.create_table()
+  
+end
 
 end
