@@ -32,7 +32,9 @@ def save()
     VALUES (?, ?)
     SQL
 
-    DB[:conn].execute(sql, self.name, self.gr)
+    DB[:conn].execute(sql, self.name, self.grade)
+
+    @id = DB[:conn]
 end
 
 end
